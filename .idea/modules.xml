@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/ONL_FER_S_09_React/.idea/ONL_FER_S_09_React.iml" filepath="$USER_HOME$/ONL_FER_S_09_React/.idea/ONL_FER_S_09_React.iml" />
-      <module fileurl="file://$USER_HOME$/PRZYKŁAD_Zaplanuj-Jedzonko/.idea/PRZYKŁAD_Zaplanuj-Jedzonko.iml" filepath="$USER_HOME$/PRZYKŁAD_Zaplanuj-Jedzonko/.idea/PRZYKŁAD_Zaplanuj-Jedzonko.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../BestShop-mk/.idea/BestShop-mk.iml" filepath="$PROJECT_DIR$/../BestShop-mk/.idea/BestShop-mk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../CL-car-sharing-mk/.idea/CL-car-sharing-mk.iml" filepath="$PROJECT_DIR$/../CL-car-sharing-mk/.idea/CL-car-sharing-mk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ONL_FER_S_09_React/.idea/ONL_FER_S_09_React.iml" filepath="$PROJECT_DIR$/../ONL_FER_S_09_React/.idea/ONL_FER_S_09_React.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PRZYKŁAD_Zaplanuj-Jedzonko/.idea/PRZYKŁAD_Zaplanuj-Jedzonko.iml" filepath="$PROJECT_DIR$/../PRZYKŁAD_Zaplanuj-Jedzonko/.idea/PRZYKŁAD_Zaplanuj-Jedzonko.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/pracownia-klej.iml" filepath="$PROJECT_DIR$/.idea/pracownia-klej.iml" />
-      <module fileurl="file://$USER_HOME$/shop-admin-panel/.idea/shop-admin-panel.iml" filepath="$USER_HOME$/shop-admin-panel/.idea/shop-admin-panel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shop-admin-panel/.idea/shop-admin-panel.iml" filepath="$PROJECT_DIR$/../shop-admin-panel/.idea/shop-admin-panel.iml" />
     </modules>
   </component>
 </project>
