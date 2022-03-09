@@ -10,5 +10,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="PRZYKŁAD_Zaplanuj-Jedzonko" />
     <orderEntry type="module" module-name="ONL_FER_S_09_React" />
+    <orderEntry type="module" module-name="shop-admin-panel" />
   </component>
 </module>
