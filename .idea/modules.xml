@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../ONL_FER_S_09_React/.idea/ONL_FER_S_09_React.iml" filepath="$PROJECT_DIR$/../ONL_FER_S_09_React/.idea/ONL_FER_S_09_React.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PRZYKŁAD_Zaplanuj-Jedzonko/.idea/PRZYKŁAD_Zaplanuj-Jedzonko.iml" filepath="$PROJECT_DIR$/../PRZYKŁAD_Zaplanuj-Jedzonko/.idea/PRZYKŁAD_Zaplanuj-Jedzonko.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/pracownia-klej.iml" filepath="$PROJECT_DIR$/.idea/pracownia-klej.iml" />
+    </modules>
+  </component>
+</project>
