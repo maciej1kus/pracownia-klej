@@ -11,8 +11,9 @@ export const AddProducts = () => {
     const [productImg, setProductImg] = useState(null);
     const [error, setError] = useState('');
 
-    const types = ['image/png', 'image/jpeg'];
+    const types = ['image/png', 'image/jpeg']; //akceptowane rozszerzenia obrazów
 
+    //product image handler
     const productImgHandler = (e) => {
         let selectedFile = e.target.files[0];
         if (selectedFile && types.includes(selectedFile.type)) {
@@ -25,9 +26,11 @@ export const AddProducts = () => {
         }
     }
 
+    // event dotyczący dodawania produktów do bazy
     const addProduct = (e) => {
         e.preventDefault();
 
+        // dodawanie zdjęcia produktu do Firebase Storage
         const storageRef = ref(storage, `/product-images/${productImg.name}`);
         const uploadTask = uploadBytesResumable(storageRef, productImg);
 
@@ -38,6 +41,7 @@ export const AddProducts = () => {
             }, err => {
                 setError(err.message)
             }, () => {
+            // wygenerowanie adresu url obrazka i dodanie obiektu do bazy wraz z linkiem do obrazka
             getDownloadURL(uploadTask.snapshot.ref).then( async url => {
                 console.log('Zdjęcie dostępne tutaj: ', url);
                 await addDoc(collection(db, "Products"), {
