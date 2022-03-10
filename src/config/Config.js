@@ -1,7 +1,7 @@
-import * as firebase from 'firebase';
-import 'firebase/auth';
-import 'firebase/firestore';
-import 'firebase/storage';
+import { initializeApp } from 'firebase/app';
+import { getFirestore } from 'firebase/firestore';
+import { getAuth, onAuthStateChanged, getRedirectResult } from 'firebase/auth';
+import { getStorage } from "firebase/storage";
 
 
 const firebaseConfig = {
@@ -14,12 +14,13 @@ const firebaseConfig = {
     measurementId: "G-7YW1WQZ8B1"
 };
 
-firebase.initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const auth = getAuth(app);
+const storage = getStorage()
 
-const auth = firebase.auth();
-const db = firebase.firestore();
-const storage = firebase.storage();
 
 export { auth, db, storage };
+
 
 
