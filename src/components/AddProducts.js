@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { storage, db } from "../config/Config";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import { collection, addDoc } from "firebase/firestore"
+import { collection, addDoc } from "firebase/firestore";
 
 export const AddProducts = () => {
 

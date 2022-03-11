@@ -9,8 +9,8 @@ export const Navbar = () => {
                 <Link to="/"><img src={logo} alt="pracownia-klej" className="logo" /></Link>
             </div>
             <div className="rightside">
-                <Link to="/signup" className="navlinks">Zarejestruj się</Link>
-                <Link to="/login" className="navlinks">Zaloguj się</Link>
+                <Link to="signup" className="navlinks">Zarejestruj się</Link>
+                <Link to="login" className="navlinks">Zaloguj się</Link>
             </div>
         </div>
     );

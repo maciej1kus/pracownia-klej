@@ -1,0 +1,11 @@
+.mybtn {
+    @include mobile {
+        width: 100%;
+    }
+}
+
+.error-msg {
+    color: $color-red;
+    font-size: 12px;
+    font-weight: 600;
+}
