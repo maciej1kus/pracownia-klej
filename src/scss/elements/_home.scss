@@ -37,6 +37,23 @@
     margin: auto 10px;
 }
 
+.logout-btn {
+    padding: 5px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border: hidden;
+    background-color: $color-orange;
+    margin-left: 10px;
+
+    &:hover {
+        background-color: $color-brown;
+    }
+}
+
 /* products */
 
 h1 {
