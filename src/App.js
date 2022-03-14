@@ -10,6 +10,8 @@ import { onAuthStateChanged } from "firebase/auth";
 import { doc, getDoc } from "firebase/firestore";
 import { CartContextProvider } from "./global/CartContext";
 import { Cart } from "./components/Cart";
+import { Cashout } from "./components/Cashout";
+import { NotFound } from "./components/NotFound";
 
 
 class App extends Component {
@@ -48,6 +50,8 @@ class App extends Component {
                             <Route path='/signup' component={Signup} />
                             <Route path='/login' component={Login} />
                             <Route path="/cartproducts" component={() => <Cart user={this.state.user} />} />
+                            <Route path='/cashout' component={Cashout} />
+                            <Route component={NotFound} />
                         </Switch>
                     </BrowserRouter>
                 </CartContextProvider>
