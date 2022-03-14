@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
 import { Icon } from 'react-icons-kit';
@@ -6,9 +6,12 @@ import { cart } from 'react-icons-kit/entypo/cart';
 import { useHistory } from 'react-router-dom';
 import { auth } from '../config/Config';
 import { signOut } from 'firebase/auth';
+import { CartContext } from "../global/CartContext";
 
 
 export const Navbar = ({ user }) => {
+
+    const { totalQty } = useContext(CartContext);
 
     const history = useHistory();
 
@@ -32,6 +35,7 @@ export const Navbar = ({ user }) => {
             {user && <div className="rightside">
                 <span><Link to="/" className="navlinks">{user}</Link></span>
                 <span><Link to="cartproducts" className="navlinks"><Icon icon={cart} /></Link></span>
+                <span className="no-of-products">{totalQty}</span>
                 <button className="logout-btn" onClick={logout}>Wyloguj się</button>
             </div> }
         </div>

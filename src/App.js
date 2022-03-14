@@ -8,6 +8,9 @@ import { Login } from "./components/Login";
 import { auth, db } from "./config/Config";
 import { onAuthStateChanged } from "firebase/auth";
 import { doc, getDoc } from "firebase/firestore";
+import { CartContextProvider } from "./global/CartContext";
+import { Cart } from "./components/Cart";
+
 
 class App extends Component {
 
@@ -37,14 +40,17 @@ class App extends Component {
     render() {
         return (
             <ProductsContextProvider>
-                <BrowserRouter>
-                    <Switch>
-                        <Route exact path='/' component={() => <Home user={this.state.user} />} />
-                        <Route path='/add-products' component={AddProducts} />
-                        <Route path='/signup' component={Signup} />
-                        <Route path='/login' component={Login} />
-                    </Switch>
-                </BrowserRouter>
+                <CartContextProvider>
+                    <BrowserRouter>
+                        <Switch>
+                            <Route exact path='/' component={() => <Home user={this.state.user} />} />
+                            <Route path='/add-products' component={AddProducts} />
+                            <Route path='/signup' component={Signup} />
+                            <Route path='/login' component={Login} />
+                            <Route path="/cartproducts" component={() => <Cart user={this.state.user} />} />
+                        </Switch>
+                    </BrowserRouter>
+                </CartContextProvider>
             </ProductsContextProvider>
         );
     }
