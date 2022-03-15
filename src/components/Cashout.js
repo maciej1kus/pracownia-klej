@@ -1,6 +1,6 @@
 import React from 'react';
 import { Icon } from 'react-icons-kit';
-import {wrench} from 'react-icons-kit/iconic/wrench';
+import { wrench } from 'react-icons-kit/iconic/wrench';
 
 export const Cashout = () => {
     return (

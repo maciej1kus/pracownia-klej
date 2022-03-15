@@ -10,6 +10,7 @@ export const AddProducts = () => {
     const [productCategory, setProductCategory] = useState('');
     const [productImg, setProductImg] = useState(null);
     const [error, setError] = useState('');
+    const [successMsg, setSuccessMsg] = useState('');
 
     const types = ['image/png', 'image/jpeg']; //akceptowane rozszerzenia obrazów
 
@@ -50,12 +51,16 @@ export const AddProducts = () => {
                     ProductCategory: productCategory,
                     ProductImg: url
                 }).then(() => {
+                    setSuccessMsg('Produkt dodany do bazy');
                     setProductName('');
                     setProductPrice(0);
                     setProductCategory('');
                     setProductImg('');
                     setError('');
                     document.getElementById('file').value = '';
+                    setTimeout(() => {
+                        setSuccessMsg('');
+                    },3000)
                 }).catch(err => setError(err.message));
             })
         })
@@ -66,6 +71,10 @@ export const AddProducts = () => {
             <br/>
             <h2>Dodaj produkt do bazy</h2>
             <hr/>
+            {successMsg&&<>
+                <div className='success-msg'>{successMsg}</div>
+                <br/>
+            </>}
             <form autoComplete="off" className="form-group" onSubmit={addProduct}>
                 <label htmlFor="product-name">Nazwa produktu:</label>
                 <br/>
@@ -80,19 +89,20 @@ export const AddProducts = () => {
                 <br/>
                 <label htmlFor="product-category">Kategoria produktu:</label>
                 <br/>
-                <select onChange={(e) => setProductCategory(e.target.value)} value={productCategory}>
+                <select className="form-control" required
+                        onChange={(e) => setProductCategory(e.target.value)} value={productCategory}>
                     <option value="">Wybierz...</option>
-                    <option value="Do jedzenia">Do jedzenia</option>
-                    <option value="Do picia">Do picia</option>
-                    <option value="Artykuły ozdobne">Artykuły ozdobne</option>
-                    <option value="Do relaksu">Do relaksu</option>
-                    <option value="Warsztaty">Warsztaty</option>
+                    <option>Do jedzenia</option>
+                    <option>Do picia</option>
+                    <option>Artykuły ozdobne</option>
+                    <option>Do relaksu</option>
+                    <option>Warsztaty</option>
                 </select>
                 <br/>
                 <br/>
                 <label htmlFor="product-img">Zdjęcie produktu:</label>
                 <br/>
-                <input type="file" className="form-control" onChange={productImgHandler} id="file" />
+                <input type="file" className="form-control" required onChange={productImgHandler} id="file" />
                 <br/>
                 <button className="btn btn-success btn-md mybtn">Dodaj</button>
             </form>
