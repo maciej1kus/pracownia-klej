@@ -2,8 +2,12 @@
 
 @import "settings";
 
-@import "elements/home";
+@import "elements/shop";
 @import "elements/navbar";
 @import "elements/addproducts";
 @import "elements/signup-login";
 @import "elements/cart";
+
+//Landing page
+@import "elements/home-landing-page/base";
+@import "elements/home-landing-page/header";

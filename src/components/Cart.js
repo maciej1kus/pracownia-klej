@@ -36,7 +36,7 @@ export const Cart = ({ user }) => {
                                 <h3>Brak produktów w koszyku</h3>
                             </div>
                             <div>
-                                <Link to="/">Powrót do strony głównej</Link>
+                                <Link to="shop">Powrót do sklepu</Link>
                             </div>
                         </>
                     }

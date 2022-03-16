@@ -33,7 +33,7 @@ export const Navbar = ({ user }) => {
             </div>}
             {/*Jeśli jesteśmy zalogowani*/}
             {user && <div className="rightside">
-                <span><Link to="/" className="navlinks">{user}</Link></span>
+                <span><Link to="shop" className="navlinks">{user}</Link></span>
                 <span><Link to="cartproducts" className="navlinks"><Icon icon={cart} /></Link></span>
                 <span className="no-of-products">{totalQty}</span>
                 <button className="logout-btn" onClick={logout}>Wyloguj się</button>

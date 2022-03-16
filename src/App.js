@@ -12,6 +12,10 @@ import { CartContextProvider } from "./global/CartContext";
 import { Cart } from "./components/Cart";
 import { Cashout } from "./components/Cashout";
 import { NotFound } from "./components/NotFound";
+import { Shop } from "./components/Shop";
+import { Workshops } from "./components/Workshops";
+import { AboutMe } from "./components/AboutMe";
+
 
 
 class App extends Component {
@@ -45,7 +49,10 @@ class App extends Component {
                 <CartContextProvider>
                     <BrowserRouter>
                         <Switch>
-                            <Route exact path='/' component={() => <Home user={this.state.user} />} />
+                            <Route exact path="/" component={() => <Home user={this.state.user} />} />
+                            <Route exact path="/workshops" component={() => <Workshops user={this.state.user} />} />
+                            <Route exact path="/about-me" component={() => <AboutMe user={this.state.user} />} />
+                            <Route path='/shop' component={() => <Shop user={this.state.user} />} />
                             <Route path='/add-products' component={AddProducts} />
                             <Route path='/signup' component={Signup} />
                             <Route path='/login' component={Login} />

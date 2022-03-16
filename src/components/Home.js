@@ -1,27 +1,21 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Navbar } from "./Navbar";
-import { Products } from "./Products";
-import { useHistory } from "react-router-dom";
-import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "../config/Config";
-
+import { Link } from "react-router-dom";
+import { Header } from './home-landing-page/Header';
 
 export const Home = ({ user }) => {
 
-    const history = useHistory();
-
-    useEffect(() => {
-        onAuthStateChanged(auth, (user) => {
-            if (!user) {
-                history.push('/login');
-            }
-        })
-    })
-
     return (
-        <div className="wrapper">
+        <>
             <Navbar user={user} />
-            <Products />
-        </div>
+            <Header />
+            <span>Strona w budowie </span>
+            <br/>
+            <Link to="shop" className="navlinks">Sklep</Link>
+            <br/>
+            <Link to="workshops" className="navlinks">Warsztaty</Link>
+            <br/>
+            <Link to="about-me" className="navlinks">O mnie</Link>
+        </>
     );
 }
