@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
 import { Link } from "react-router-dom";
-import logo from "../images/logo.png";
 import { Icon } from 'react-icons-kit';
 import { cart } from 'react-icons-kit/entypo/cart';
 import { useHistory } from 'react-router-dom';
@@ -24,7 +23,10 @@ export const Navbar = ({ user }) => {
     return (
         <div className="navbox">
             <div className="leftside">
-                <Link to="/"><img src={logo} alt="pracownia-klej" className="logo" /></Link>
+                <Link to="/" className="logo">
+                    <span className="logo__primary_word">pracownia</span>
+                    <span className="logo__secondary__word">klej</span>
+                </Link>
             </div>
             {/*Jeśli nie jesteśmy zalogowani*/}
             {!user && <div className="rightside">

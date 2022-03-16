@@ -4,6 +4,7 @@ import { Products } from "./Products";
 import { useHistory } from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../config/Config";
+import { HeaderLandingPage } from "./HeaderLandingPage";
 
 
 export const Shop = ({ user }) => {
@@ -21,6 +22,7 @@ export const Shop = ({ user }) => {
     return (
         <div className="wrapper">
             <Navbar user={user} />
+            <HeaderLandingPage />
             <Products />
         </div>
     );

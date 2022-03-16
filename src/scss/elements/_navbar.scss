@@ -9,9 +9,27 @@
   align-items: center;
   padding: 7px 25px;
 
-  .logo {
-    width: 100px;
-    height: 52px;
+  .leftside {
+    position: relative;
+    width: auto;
+
+    .logo {
+      text-decoration: none;
+
+      &__primary_word {
+        font-family: $font-tenor-sans;
+        font-size: 1.5rem;
+        color: $color-black;
+        position: absolute;
+      }
+
+      &__secondary__word {
+        font-family: $font-dancing-script;
+        font-size: 4rem;
+        color: $color-orange;
+        text-align: center;
+      }
+    }
   }
 
   .rightside {

@@ -11,7 +11,7 @@ export const Products = () => {
 
     return (
         <>
-            {products.length !== 0 && <h1>Produkty</h1>}
+            {products.length !== 0 && <h2>Produkty</h2>}
             <div className='products-container'>
                 {products.length === 0 && <div>Trwa wczytywanie produktów...</div>}
                 {products.map(product => (
