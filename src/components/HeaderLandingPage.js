@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-export const Header = () => {
+export const HeaderLandingPage = () => {
     return (
         <header className="header">
             <div className="header__container container">

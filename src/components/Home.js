@@ -1,14 +1,19 @@
 import React from 'react';
 import { Navbar } from "./Navbar";
 import { Link } from "react-router-dom";
-import { Header } from './home-landing-page/Header';
+import { HeaderLandingPage } from './HeaderLandingPage';
+import { CarouselLandingPage } from './CarouselLandingPage';
+
 
 export const Home = ({ user }) => {
 
     return (
         <>
             <Navbar user={user} />
-            <Header />
+            <HeaderLandingPage />
+            <main>
+                <CarouselLandingPage />
+            </main>
             <span>Strona w budowie </span>
             <br/>
             <Link to="shop" className="navlinks">Sklep</Link>

@@ -1,0 +1,10 @@
+#carouselIndicators .carousel-inner .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 60vh;
+  overflow: hidden;
+
+  @include mobile {
+    height: 50vh;
+  }
+}
