@@ -14,7 +14,6 @@ export const Home = ({ user }) => {
                 <CarouselLandingPage />
             </main>
             <span>Strona w budowie </span>
-            <span>Strona w budowie </span>
         </>
     );
 }
