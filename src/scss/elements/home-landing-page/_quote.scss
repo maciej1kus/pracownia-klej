@@ -1,0 +1,17 @@
+.quote {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__text {
+    font-family: $font-dancing-script;
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: $color-orange;
+    padding: 15px;
+    text-align: center;
+  }
+}
