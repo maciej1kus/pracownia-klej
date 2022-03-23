@@ -11,7 +11,7 @@ The application is available on the Firebase server: https://pracownia-klej.web.
   * Validation, 
   * Data saved in Cloud Firestore Database, 
   * Product images will be stored in Firebase Storage.
-* All products:
+* All products (shop):
   * Products data retrieved from Cloud Firestore Database,
   * Users can add the products to the cart. After adding the same product a message should appear informing that the product is already in the cart (React Toastify has been used).
 * Shopping cart:
