@@ -11,7 +11,11 @@
     font-size: 2.75rem;
     font-weight: 700;
     color: $color-orange;
-    padding: 15px;
     text-align: center;
   }
+}
+
+.quote-box {
+  max-width: 580px;
+  display: flex;
 }

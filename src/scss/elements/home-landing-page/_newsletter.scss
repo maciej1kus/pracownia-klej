@@ -1,0 +1,74 @@
+.newsletter {
+  background: $color-dark-grey;
+
+  &__container {
+    padding: 50px 40px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+
+    p {
+      max-width: 600px;
+      margin: 20px auto;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    .email-box {
+      height: 1.75rem;
+      display: flex;
+      justify-content: center;
+
+      @include mobile {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      i {
+        background-color: $color-orange;
+        width: 1.75rem;
+        line-height: 1.75rem;
+
+        @include mobile {
+          display: none;
+        }
+      }
+
+      .tbox, .newsletter-btn {
+        border: none;
+        outline: none;
+      }
+
+      .tbox {
+        width: 0;
+        transition: 0.6s;
+
+        @include mobile {
+          width: 50%;
+          border-radius: 5px;
+          margin-top: 10px;
+        }
+      }
+
+      &:hover > .tbox, .tbox:focus {
+        @media (min-width: 769px) {
+          width: 260px;
+          padding: 0 10px;
+        }
+      }
+
+      .newsletter-btn {
+        background-color: $color-orange;
+        color: $color-white;
+        padding: 0 10px;
+        cursor: pointer;
+
+        @include mobile {
+          border-radius: 5px;
+          width: 50%;
+          margin: 5px;
+        }
+      }
+    }
+  }
+}
