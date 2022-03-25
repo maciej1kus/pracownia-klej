@@ -3,6 +3,7 @@ import { Navbar } from "./Navbar";
 import { HeaderLandingPage } from './HeaderLandingPage';
 import { CarouselLandingPage } from './CarouselLandingPage';
 import { QuoteLandingPage } from './QuoteLandingPage';
+import { NewsletterLandingPage } from "./NewsletterLandingPage";
 
 
 export const Home = ({ user }) => {
@@ -14,6 +15,7 @@ export const Home = ({ user }) => {
             <main>
                 <CarouselLandingPage />
                 <QuoteLandingPage />
+                <NewsletterLandingPage />
             </main>
             <span>Strona w budowie </span>
         </>
