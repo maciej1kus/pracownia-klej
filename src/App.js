@@ -15,7 +15,10 @@ import { NotFound } from "./components/NotFound";
 import { Shop } from "./components/Shop";
 import { Workshops } from "./components/Workshops";
 import { AboutMe } from "./components/AboutMe";
-
+import { Faq } from "./components/Faq";
+import { DeliveryReturns } from "./components/DeliveryReturns";
+import { PrivacyPolicy } from "./components/PrivacyPolicy";
+import { TermsConditions } from "./components/TermsConditions";
 
 
 class App extends Component {
@@ -50,9 +53,13 @@ class App extends Component {
                     <BrowserRouter>
                         <Switch>
                             <Route exact path="/" component={() => <Home user={this.state.user} />} />
-                            <Route exact path="/workshops" component={() => <Workshops user={this.state.user} />} />
-                            <Route exact path="/about-me" component={() => <AboutMe user={this.state.user} />} />
+                            <Route path='/workshops' component={() => <Workshops user={this.state.user} />} />
+                            <Route path='/about-me' component={() => <AboutMe user={this.state.user} />} />
                             <Route path='/shop' component={() => <Shop user={this.state.user} />} />
+                            <Route path='/faq' component={() => <Faq user={this.state.user} />} />
+                            <Route path='/delivery-and-returns' component={() => <DeliveryReturns user={this.state.user} />} />
+                            <Route path='/privacy-policy' component={() => <PrivacyPolicy user={this.state.user} />} />
+                            <Route path='/terms-and-conditions' component={() => <TermsConditions user={this.state.user} />} />
                             <Route path='/add-products' component={AddProducts} />
                             <Route path='/signup' component={Signup} />
                             <Route path='/login' component={Login} />

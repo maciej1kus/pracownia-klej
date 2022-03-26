@@ -4,6 +4,7 @@ import { HeaderLandingPage } from './HeaderLandingPage';
 import { CarouselLandingPage } from './CarouselLandingPage';
 import { QuoteLandingPage } from './QuoteLandingPage';
 import { NewsletterLandingPage } from "./NewsletterLandingPage";
+import { ContactLandingPage } from "./ContactLandingPage";
 
 
 export const Home = ({ user }) => {
@@ -16,7 +17,9 @@ export const Home = ({ user }) => {
                 <CarouselLandingPage />
                 <QuoteLandingPage />
                 <NewsletterLandingPage />
+                <ContactLandingPage />
             </main>
+            {/*miejsce na footera*/}
             <span>Strona w budowie </span>
         </>
     );
