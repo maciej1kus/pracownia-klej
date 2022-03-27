@@ -8,4 +8,35 @@
     align-items: center;
   }
 
+  &__copy {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    color: $color-dark-grey;
+    padding: 0 15px;
+  }
+
+  &__icons {
+    padding: 0 15px;
+
+    a {
+      display: inline-block;
+      height: 2.5rem;
+      width: 2.5rem;
+      background-color: $color-dark-grey;
+      color: $color-white;
+      text-align: center;
+      line-height: 2.5rem;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+
+      &:first-of-type {
+        margin-right: 25px;
+      }
+
+      &:hover {
+        background-color: $color-orange;
+        color: $color-white;
+      }
+    }
+  }
 }

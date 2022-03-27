@@ -9,13 +9,13 @@
   &__text {
     font-family: $font-dancing-script;
     font-size: 2.75rem;
-    font-weight: 700;
+    font-weight: 500;
     color: $color-orange;
     text-align: center;
   }
 }
 
 .quote-box {
-  max-width: 580px;
+  max-width: 550px;
   display: flex;
 }

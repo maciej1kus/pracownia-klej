@@ -1,6 +1,7 @@
 .newsletter {
   background: $color-dark-grey;
 
+
   &__container {
     padding: 50px 40px;
     text-align: center;
@@ -47,6 +48,12 @@
           border-radius: 5px;
           margin-top: 10px;
         }
+
+        &::placeholder {
+          @include mobile {
+            font-size: 0.875rem;
+          }
+        }
       }
 
       &:hover > .tbox, .tbox:focus {
@@ -63,7 +70,7 @@
         cursor: pointer;
 
         @include mobile {
-          border-radius: 5px;
+          border-radius: 3px;
           width: 50%;
           margin: 5px;
         }

@@ -43,6 +43,7 @@
       font-weight: 600;
       margin: auto 10px;
       text-decoration: none;
+      transition: all 0.3s ease;
 
       &:hover {
         color: $color-orange;
@@ -77,6 +78,7 @@
       border: hidden;
       background-color: $color-orange;
       margin-left: 10px;
+      transition: all 0.3s ease;
 
       &:hover {
         background-color: $color-brown;
