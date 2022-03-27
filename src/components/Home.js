@@ -5,6 +5,7 @@ import { CarouselLandingPage } from './CarouselLandingPage';
 import { QuoteLandingPage } from './QuoteLandingPage';
 import { NewsletterLandingPage } from "./NewsletterLandingPage";
 import { ContactLandingPage } from "./ContactLandingPage";
+import { FooterLandingPage } from "./FooterLandingPage";
 
 
 export const Home = ({ user }) => {
@@ -19,8 +20,7 @@ export const Home = ({ user }) => {
                 <NewsletterLandingPage />
                 <ContactLandingPage />
             </main>
-            {/*miejsce na footera*/}
-            <span>Strona w budowie </span>
+            <FooterLandingPage />
         </>
     );
 }
